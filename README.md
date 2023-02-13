@@ -2,56 +2,25 @@
 
 ## About the Project
 
-This coursework comprises of creating two certificate files, x509 and PGP. There are two parts to this coursework in which the initial component is achieved on CentOS 9 (Linux). All the tasks relating to their certificates and signatures were created on the terminal using Openssl toolkit commands.
-
-The second component of the application is creating an application that verifies the authenticity of the broadcast documents with the help of the files created in the first component.
+We have created an application that analyses and displays the tracking data. The application is made to run from a standalone executable or a Python script when used in a Command Line Interface (CLI). The application's Graphical User Interface (GUI) can be launched from CLI. No inaccurate data is assumed and expected from this data
 
 ## Screenshots
 
 <p align="center">
-    <b>Main Page</b>
+    <b>Application</b>
 </p>
 
-<img src="SS/Screenshot (8).png" alt="Main">
+<img src="SS/Screenshot 1.jpg" alt="Main">
 
 
-<p align="center">
-    <b>Login Page</b>
-</p>
+## Execution
 
-<img src="SS/Screenshot (2).png" alt="Main">
+1. Go to the project folder where the python file is located.
+2. Run the Python script using the input options in the format given below once you are in the folder directory:
 
-
-<p align="center">
-    <b>Register Page</b>
-</p>
-
-<img src="SS/Screenshot (3).png" alt="Main">
-
-
-<p align="center">
-    <b>Dishes Page</b>
-</p>
-
-<img src="SS/Screenshot (4).png" alt="Main">
-
-
-<p align="center">
-    <b>Admin Home Page</b>
-</p>
-
-<img src="SS/Screenshot (5).png" alt="Main">
-
-
-## Installation
-
-In XAMPP, just create new database in phpmyadmin and import SQL file which is located in `SQL/` directory.
-
-## Admin Page
-
-To access admin portal, type this in URL `root/admin/ ` where root is your root directory
-
-Admin credentials: Username: admin Password: admin123
+```bash
+python3 cw2.py -f sample_3m_lines.json -d 100528230144-02f68abad20e46449b72482dce6a06a4 -u 9ab3093f8cef3be4 -t 7
+```
 
 ## Technologies Used
 
@@ -59,6 +28,6 @@ Python
 
 ## Operating System
 
-1. CentOS
+1. Ubuntu
 2. Windows
 
